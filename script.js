@@ -113,4 +113,11 @@ function createHeart() {
     }, 7000);
 }
 
-setInterval(createHeart, 600);
+setInterval(createHeart, 600);function restartJourney() {
+    const noBtn = document.getElementById('noBtn');
+    if (noBtn) {
+        noBtn.style.transform = 'translate(0px, 0px)';
+    }
+    nextPage(1);
+}
+
