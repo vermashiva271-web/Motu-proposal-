@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Motuu ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="hearts-container"></div>
+
+    <div class="container">
+        <!-- Page 1: Welcome -->
+        <section class="page active" id="page1">
+            <div class="emoji">💌</div>
+            <h1 class="script-font">Hey Motuu...</h1>
+            <p>Aaj dil mein kuch baatein hain jo lafzon mein kehna thoda mushkil hai, isliye unhe is chhoti si duniya mein likha hai.</p>
+            <p class="sub-text">Headphones laga lo ya volume thodi badha lo...</p>
+            <button class="btn primary-btn" onclick="startJourney()">Dil ki baat padho ✨</button>
+        </section>
+
+        <!-- Page 2: Friendship -->
+        <section class="page" id="page2">
+            <div class="emoji">🫂</div>
+            <h2 class="script-font">Sabse Pyaari Dosti</h2>
+            <p>Jab humari dosti shuru hui thi, tab bilkul andaza nahi tha ki tum meri zindagi ka sabse khoobsurat hissa ban jaogi.</p>
+            <p>Tumhari wo chhoti-chhoti baatein, tumhara gussa, aur meri har bakwas sunna—sab kuch mere din ka best part ban gaya hai.</p>
+            <button class="btn primary-btn" onclick="nextPage(3)">Aage badho →</button>
+        </section>
+
+        <!-- Page 3: The Realization -->
+        <section class="page" id="page3">
+            <div class="emoji">🌙</div>
+            <h2 class="script-font">Jab Ehsaas Hua...</h2>
+            <p>Pata hi nahi chala kab "bestie" se tum meri har dua, har khushi aur har khayal ki wajah ban gayi.</p>
+            <p>Ab jab bhi kuch accha hota hai, sabse pehle tumhe batane ka mann karta hai. Aur jab mann udaas hota hai, toh bas tumhari ek aawaz kaafi hoti hai.</p>
+            <button class="btn primary-btn" onclick="nextPage(4)">Ek baat aur... →</button>
+        </section>
+
+        <!-- Page 4: Shayari & Feelings -->
+        <section class="page" id="page4">
+            <div class="emoji">🌹</div>
+            <h2 class="script-font">Sirf Tumhare Liye, Motuu</h2>
+            <div class="shayari-box">
+                "Dosti se shuru hui thi kahani hamari,<br>
+                Ab har dhadkan mein bas tumhari hi baari.<br>
+                Rehna hai saath tumhare har mod par,<br>
+                Kyunki tum hi ho ab zindagi hamari."
+            </div>
+            <p>Main apni poori zindagi aise hi tumhe tang karte hue aur tumhara khayal rakhte hue bitana chahta hoon.</p>
+            <button class="btn primary-btn" onclick="nextPage(5)">Aakhri Sawaal ❤️ →</button>
+        </section>
+
+        <!-- Page 5: The Proposal -->
+        <section class="page" id="page5">
+            <div class="emoji">💍</div>
+            <h1 class="script-font">Motuu, Will You Be Mine?</h1>
+            <p>Kya tum meri bestie se meri life partner banogi? Hamesha ke liye?</p>
+            <div class="btn-group">
+                <button class="btn yes-btn" onclick="sayYes()">Haan, Bilkul! ❤️</button>
+                <button class="btn no-btn" id="noBtn" onmouseover="moveNoButton()" onclick="moveNoButton()">Nahi 🙈</button>
+            </div>
+        </section>
+
+        <!-- Page 6: Celebration -->
+        <section class="page" id="page6">
+            <div class="emoji">💖🎉</div>
+            <h1 class="script-font">I Love You, Motuu!</h1>
+            <p>Tumne aaj mujhe duniya ka sabse khushnaseeb insaan bana diya!</p>
+            <p>Ab se har khushi, har sapna, aur har pal sirf hum dono ka hai. Thank you meri zindagi mein aane ke liye. ❤️</p>
+            <div class="final-badge">Forever Together ✨</div>
+        </section>
+    </div>
+
+    <button id="music-toggle" class="music-btn" onclick="toggleMusic()" title="Play/Pause Music">🎵</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
