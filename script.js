@@ -114,7 +114,14 @@ function createHeart() {
 }
 
 setInterval(createHeart, 600);function restartJourney() {
-    const noBtn = document.getElementById('noBtn');
+    const noBtn = document.getE<!-- Page 6: Celebration -->
+        <section class="page" id="page6">
+            <div class="emoji">💖🎉</div>
+            <h1 class="script-font">I Love You, Motuu!</h1>
+            <p>Tumne aaj mujhe duniya ka sabse khushnaseeb insaan bana diya!</p>
+            <p>Ab se har khushi, har sapna, aur har pal sirf hum dono ka hai. Thank you meri zindagi mein aane ke liye. ❤️</p>
+            <div class="final-badge">Forever Together ✨</div>
+        </section>('noBtn');
     if (noBtn) {
         noBtn.style.transform = 'translate(0px, 0px)';
     }
